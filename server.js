@@ -6,7 +6,7 @@ app.use(express.urlencoded({extended: true}))
 
 const Document = require('./models/Document')
 const mongoose = require('mongoose')
-mongoose.connect("mongodb://localhost/wastebin", )
+mongoose.connect("mongodb:/localhost/Document")
 
 app.get('/', (req,res)=>{
 
