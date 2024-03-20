@@ -1,5 +1,10 @@
 const express = require("express")
 const app = express();
+// server.js
+require('dotenv').config();
+
+// Your Express application setup code here
+
 // app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use(express.static('public'))
@@ -7,7 +12,7 @@ app.use(express.urlencoded({extended: true}))
 
 const Document = require('./models/Document')
 const mongoose = require('mongoose')
-mongoose.connect("mongodb+srv://saurabh:EvKJuuNxtsxWGxd0@cluster0.e8d2pel.mongodb.net/Document")
+mongoose.connect(process.env.MONGOURI)
 
 app.get('/', (req,res)=>{
 
@@ -46,4 +51,4 @@ app.get('/:id', async (req,res)=>{
         res.redirect('/')
     }
 })
-app.listen(3000);
+app.listen(process.env.PORT);
