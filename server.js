@@ -12,7 +12,7 @@ app.use(express.urlencoded({extended: true}))
 
 const Document = require('./models/Document')
 const mongoose = require('mongoose')
-mongoose.connect(process.env.MONGOURI)
+mongoose.connect("mongodb+srv://saurabh:EvKJuuNxtsxWGxd0@cluster0.e8d2pel.mongodb.net/Document")
 
 app.get('/', (req,res)=>{
 
