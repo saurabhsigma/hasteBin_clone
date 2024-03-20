@@ -11,11 +11,11 @@ mongoose.connect("mongodb+srv://saurabh:EvKJuuNxtsxWGxd0@cluster0.e8d2pel.mongod
 
 app.get('/', (req,res)=>{
 
-    const code = `Welcome to Wastebin!
+    const code = `Welcome to CodeCrate!
 
 
-USe the commands in the top right corner 
-to create a new file to share with others.`
+Use the commands in the top right corner 
+to create a new file to share the url with others.`
     res.render("code-display", { code, language : 'plaintext'})
 });
 
