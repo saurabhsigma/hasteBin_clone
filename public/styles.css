@@ -40,9 +40,12 @@ textarea {
     position: fixed;
     top:0;
     right:0;
-    opacity: 0.15;
+    opacity: 1;
     transition: opacity 200ms ease-in-out;
-    background-color: #0081A2;
+    background-color: #000000;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px;
 }
 
 .buttons-wrapper:hover{
@@ -75,8 +78,8 @@ textarea {
 .btn{
     cursor: pointer;
     background: none;
-    border: 1px solid #002b36;
-    color: #002b36;
+    border: 1px solid #feffff;
+    color: #ffffff;
     border-radius: 0.25rem;
     padding:  0.25rem 0.5rem;
     transition: background-color 200mx ease-in-out;
