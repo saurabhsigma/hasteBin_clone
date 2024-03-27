@@ -1,7 +1,7 @@
 const express = require("express")
 const app = express();
 // server.js
-require('dotenv').config();
+// require('dotenv').config();
 
 // Your Express application setup code here
 
@@ -51,4 +51,4 @@ app.get('/:id', async (req,res)=>{
         res.redirect('/')
     }
 })
-app.listen(process.env.PORT);
+app.listen(3000);
