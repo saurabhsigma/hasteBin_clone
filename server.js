@@ -17,10 +17,9 @@ mongoose.connect("mongodb+srv://saurabh:EvKJuuNxtsxWGxd0@cluster0.e8d2pel.mongod
 app.get('/', (req,res)=>{
 
     const code = `Welcome to CodeCrate!
-
-
-Use the commands in the top right corner 
-to create a new file to share the url with others.`
+     
+Use the commands in the top right corner to create a new file to share the url with others.
+`
     res.render("code-display", { code, language : 'plaintext'})
 });
 
